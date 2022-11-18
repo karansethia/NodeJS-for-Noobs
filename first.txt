@@ -1,0 +1,1 @@
+This is file written from first-app js module
