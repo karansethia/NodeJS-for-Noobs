@@ -1,0 +1,21 @@
+{
+  "name": "NodeTut",
+  "version": "1.0.0",
+  "description": "A detailed tutorial on NodeJS",
+  "main": "1-BasicResponse.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node first-app.js",
+    "start-guide": "node first-app.js"  
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karansethia/NodeJS-for-Noobs.git"
+  },
+  "author": "Karan Sethia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karansethia/NodeJS-for-Noobs/issues"
+  },
+  "homepage": "https://github.com/karansethia/NodeJS-for-Noobs#readme"
+}
