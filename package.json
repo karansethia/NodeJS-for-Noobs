@@ -1,12 +1,12 @@
 {
-  "name": "NodeTut",
+  "name": "node-for-noobs",
   "version": "1.0.0",
   "description": "A detailed tutorial on NodeJS",
   "main": "1-BasicResponse.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node first-app.js",
-    "start-guide": "node first-app.js"  
+    "start": "nodemon first-app.js",
+    "start-guide": "node first-app.js"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/karansethia/NodeJS-for-Noobs/issues"
   },
-  "homepage": "https://github.com/karansethia/NodeJS-for-Noobs#readme"
+  "homepage": "https://github.com/karansethia/NodeJS-for-Noobs#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
