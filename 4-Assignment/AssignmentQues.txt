@@ -1,0 +1,8 @@
+1 => Open up a NodeJS Server on Poert 3000
+2 => Handle two routes "/" and "/users": 
+        (i) Return some greeting on "/"
+        (ii) Return a list of dummy users on "/users"
+3 => Add a form with a "username" <input> to the "/" page and 
+     submit a POST request to "/create-user" upon a button click
+4 => Add the "/create-user" route and parse the incoming data 
+     and simply log in to console
