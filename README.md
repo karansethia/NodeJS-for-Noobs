@@ -17,3 +17,14 @@ And then simply run on your terminal :
 ``` npm install ```
 
 and it will install all the necessary packages
+## A Brief intro to NodeJS
+Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project!
+It runs the V8 JavaScript engine, the core of Google Chrome, outside of the browser. This allows Node.js to be very performant.
+
+### What NodeJS can do 
+- Node.js can generate dynamic page content
+- Node.js can create, open, read, write, delete, and close files on the server
+- Node.js can collect form data
+- Node.js can add, delete, modify data in your database
+
+## How to follow this course : 
