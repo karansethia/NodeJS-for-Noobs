@@ -1,0 +1,5 @@
+=> Create a new npm project install express and if you want nodemon
+=> create an express.js app which funnels the requests through two middlewares
+=> handle requests through '/' and '/users' such that each request
+     has only one handler/middleware that outputs something on console 
+     and in application with h1 html tag
