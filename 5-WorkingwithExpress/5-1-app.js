@@ -1,7 +1,7 @@
 //! EXPRESS IS A PRODUCTION DEPENDENCY MAKE TO USE --SAVE FLAG AND NOT --SAVE-DEV
 const express = require('express');
 
-const http = require('http');
+//const http = require('http');
 const app = express();
 console.log("working with express");
 
@@ -12,7 +12,12 @@ app.use((req,res,next) => {  //? next is a function passed to the 'use' method t
 });
 app.use((req,res,next) => { 
     console.log("inside second middleware");
-});
-const server = http.createServer(app);
+    res.send('<h1>This message is from the second middleware</h1>'); //? res.send() is a special method of express that allows us to write html
 
-server.listen(3000);
+
+    //? since we are not calling the next() function that means this is the last middleware that will be called
+});
+// const server = http.createServer(app);
+
+// server.listen(3000); or we can use
+app.listen(3000)
