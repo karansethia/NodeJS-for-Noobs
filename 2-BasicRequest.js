@@ -48,7 +48,7 @@ const server = http.createServer((req,res) => {
                 res.statusCode = 302;
                 res.setHeader('Location','/') // this will store meta on the same url
                 return res.end();
-            })
+            });
         });
 
       
