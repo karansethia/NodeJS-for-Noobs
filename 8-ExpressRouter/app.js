@@ -1,23 +1,19 @@
 const express = require('express');
 const bodyParser = require('body-parser')
 
+//? Importing a local Module
+const adminRoutes = require('./routes/admin');
+const shopRoutes = require('./routes/shop');
+
 const app = express();
 app.use(bodyParser.urlencoded({extended: true})); 
 
+//? Using local modules inside our app also make sure to use the module with default path '/' in the end so it doesnt stop other middleware modules 
+app.use(adminRoutes)
+app.use(shopRoutes)
 
-
-app.use('/add-product',(req,res,next) => {
-    console.log("inside /add-product path");
-    res.send('<form action="/product" method="POST"><input type="text" name="title"><button type="submit">Send</button</form>')
-});
-
-app.post('/product',(req,res,next) => {
-    console.log("inside /products path");
-    console.log(req.body); 
-    res.redirect('/');
-});
-app.use('/',(req,res,next) => {
-    console.log("inside / path");
-    res.send('<h1>in the default response</h1>');
-});
+//? redirecting to a 404 error or page not found response
+app.use((req,res,next)=>{
+    res.status(404).send('<h1>Page not found buddy</h1>')
+})
 app.listen(3000);
