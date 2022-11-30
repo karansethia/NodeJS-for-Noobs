@@ -9,7 +9,7 @@ const app = express();
 app.use(bodyParser.urlencoded({extended: true})); 
 
 //? Using local modules inside our app also make sure to use the module with default path '/' in the end so it doesnt stop other middleware modules 
-app.use(adminRoutes)
+app.use('/admin',adminRoutes)  //? on adding /admin the url after domain will begin with /admin. Eg- www.website.com/admin/add-product. EXpress will simply ignore this
 app.use(shopRoutes)
 
 //? redirecting to a 404 error or page not found response
