@@ -15,18 +15,20 @@ const router = express.Router();
 //? both routes above are same we can repeat the path here because we got different methods, get and post, so these will be two different routes too.
 
 
-
+//! /admin/add-product => GET => from this the user is being redirected to add-product.html (or you can say user is trying to GET to a certain page by requesting)
 router.get('/add-product', (req, res, next) => {
     // res.send(
     //   '<form action="/admin/add-product" method="POST"><input type="text" name="title"><button type="submit">Add Product</button></form>'
     // );
+
+    // todo sending HTML pages instead
     res.sendFile(path.join(__dirname,'../','views','add-product.html'));
   });
   
-  // /admin/add-product => POST
+  //! /admin/add-product => POST => from this the user is submitting an input and being redirected to another page via shop.js
   router.post('/add-product', (req, res, next) => {
     console.log(req.body);
-    res.redirect('/');
+    res.redirect('/');  // this path can be found in shop.js
   });
 
 module.exports = router;
