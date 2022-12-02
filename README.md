@@ -17,6 +17,11 @@ And then simply run on your terminal :
 ``` npm install ```
 
 and it will install all the necessary packages
+
+## How to follow this course : 
+- All files and Folders are marked with number so just follow with them
+- Some amount of theory can be found in this Readme file
+
 ## A Brief intro to NodeJS
 Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project!
 It runs the V8 JavaScript engine, the core of Google Chrome, outside of the browser. This allows Node.js to be very performant.
@@ -27,6 +32,4 @@ It runs the V8 JavaScript engine, the core of Google Chrome, outside of the brow
 - Node.js can collect form data
 - Node.js can add, delete, modify data in your database
 
-## How to follow this course : 
-- All files and Folders are marked with number so just follow with them
-- Some amount of theory can be found in this Readme file
+
