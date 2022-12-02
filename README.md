@@ -32,4 +32,12 @@ It runs the V8 JavaScript engine, the core of Google Chrome, outside of the brow
 - Node.js can collect form data
 - Node.js can add, delete, modify data in your database
 
+## Working of NodeJS
+ Node.js accepts the request from the clients and sends the response, while working with the request node.js handles them with a single thread. To operate I/O operations or requests node.js use the concept of threads. Thread is a sequence of instructions that the server needs to perform. It runs parallel on the server to provide the information to multiple clients. Node.js is an event loop single-threaded language. It can handle concurrent requests with a single thread without blocking it for one request.
+
+Node.js basically works on two concept
+
+- Asynchronous
+- Non-blocking I/O
+
 
