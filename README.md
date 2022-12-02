@@ -21,6 +21,13 @@ and it will install all the necessary packages
 ## How to follow this course : 
 - All files and Folders are marked with number so just follow with them
 - Some amount of theory can be found in this Readme file
+- **Running the scripts in an easy way**
+
+    ```npm run section-<sectionNumber>```
+
+    for example, running *1-BasicResponse.js*
+
+    ```npm run section-1```
 
 ## A Brief intro to NodeJS
 Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project!
