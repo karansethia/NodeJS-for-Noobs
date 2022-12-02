@@ -28,3 +28,5 @@ It runs the V8 JavaScript engine, the core of Google Chrome, outside of the brow
 - Node.js can add, delete, modify data in your database
 
 ## How to follow this course : 
+- All files and Folders are marked with number so just follow with them
+- Some amount of theory can be found in this Readme file
