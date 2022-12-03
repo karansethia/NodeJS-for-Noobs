@@ -1,0 +1,2 @@
+=> Create an Express app which serves two html files for '/' and '/users'
+=> Add some static js and css to your html files
