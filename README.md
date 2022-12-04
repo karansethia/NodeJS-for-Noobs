@@ -47,4 +47,19 @@ Node.js basically works on two concept
 - Asynchronous
 - Non-blocking I/O
 
+## Non-blocking I/o
 
+ Non-blocking i/o  means working with multiple requests without blocking the thread for a single request. I/O basically interacts with external systems such as files, databases. Node.js is not used for CPU-intensive work means for calculations, video processing because a single thread cannot handle the CPU works.
+
+
+## Asynchronous: 
+Asynchronous is executing a callback function. The moment we get the response from the other server or database it will execute a callback function. Callback functions are called as soon as some work is finished and this is because the node.js uses an event-driven architecture. The single thread doesn’t work with the request instead it sends the request to another system which resolves the request and it is accessible for another request.
+
+To implement the concept of the system to handle the request  node.js uses the concept of Libuv.
+
+Libuv is an open-source library built-in C. It has a strong focus on asynchronous and  I/O, this gives node access to the underlying computer operating system, file system, and networking.
+
+Libuv implements two extremely important features of node.js  
+
+- Event loop
+- Thread pool
