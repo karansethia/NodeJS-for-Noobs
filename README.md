@@ -63,3 +63,12 @@ Libuv implements two extremely important features of node.js
 
 - Event loop
 - Thread pool
+
+### Event loop
+ The event loop contains a single thread and is responsible for handling easy tasks like executing callbacks and network I/O. When the program is to initialize all the top-level code is executed, the code is not in the callback function. All the applications code that is inside callback functions will run in the event loop. EventLoop is the heart of node.js. When we start our node application the event loop starts running right away. Most of the work is done in the event loop.
+
+Nodejs use event-driven-architecture.
+
+- Events are emitted.
+- Event loop picks them up.
+- Callbacks are called.
