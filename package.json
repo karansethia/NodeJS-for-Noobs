@@ -15,7 +15,8 @@
     "section-6":"node ./6-Assignment/Solution.js",
     "section-7":"node ./7-Express-POST/app.js",
     "section-8":"node ./8-ExpressRouter/app.js",
-    "section-9":"node ./9-StylingNodeApp/app.js"
+    "section-9":"node ./9-StylingNodeApp/app.js",
+    "section-10":"node ./10-Assignment/app.js"
   },
   "repository": {
     "type": "git",
