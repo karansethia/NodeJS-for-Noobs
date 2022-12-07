@@ -73,4 +73,6 @@ Nodejs use event-driven-architecture.
 - Event loop picks them up.
 - Callbacks are called.
 
+![Nodejs Architecture](./nodejsarchi.png)
+
 ###### Credits to __GeeksforGeeks.org__
