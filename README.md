@@ -75,6 +75,15 @@ Nodejs use event-driven-architecture.
 
 ![Nodejs Architecture](./nodejsarchi.png)
 
+## NodeJS Modules
+In Node.js, Modules are the blocks of encapsulated code that communicates with an external application on the basis of their related functionality. Modules can be a single file or a collection of multiples files/folders. The reason programmers are heavily reliant on modules is because of their re-usability as well as the ability to break down a complex piece of code into manageable chunks.
+
+Modules are of three types:
+
+- Core Modules
+- Local Modules
+- Third-party Modules
+
 ## Project still in development 
 
 ###### Credits to __GeeksforGeeks.org__
