@@ -1,8 +1,6 @@
 // ? syntax to import any package or module in nodejs (import the module first if it is not a core module)
 const http = require('http')
 
-
-
 // ? takes requestListener as an argument 
 // ? requestListener is a functiion that will execute for every incoming request
 const server = http.createServer((req,res) => {   

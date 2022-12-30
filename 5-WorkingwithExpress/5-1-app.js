@@ -1,4 +1,4 @@
-//! EXPRESS IS A PRODUCTION DEPENDENCY MAKE TO USE --SAVE FLAG AND NOT --SAVE-DEV
+//! EXPRESS IS A PRODUCTION DEPENDENCY MAKE TO USE --SAVE FLAG AND NOT --SAVE-DEV WHILE INSTALLING
 const express = require('express');
 
 //const http = require('http');
@@ -20,4 +20,10 @@ app.use((req,res,next) => {
 // const server = http.createServer(app);
 
 // server.listen(3000); or we can use
-app.listen(3000)
+app.listen(3000);
+
+//By using this code you will notice that the console.log is repeated twice because your 
+//browser automatically makes a request for /favicon.ico, and the request falls through
+// to your default handler at the bottom. So the browser makes a request, which passes
+// through your middleware, then you make a request by requesting the page itself. 
+// for more details and solution check this link - https://stackoverflow.com/questions/35408729/express-js-prevent-get-favicon-ico/35408810#35408810
