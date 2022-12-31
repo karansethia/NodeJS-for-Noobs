@@ -11,7 +11,7 @@ app.use('/add-product',(req,res,next) => {
     res.send('<form action="/product" method="POST"><input type="text" name="title"><button type="submit">Send</button</form>')
 });
 
-//? we are using app.post instead of app.use to limit the user to get requests only
+//? we are using app.post instead of app.use to limit the user to post requests only
 //? hence if user manually types /product in the url he will be redirected not to /product but to '/' path
 app.post('/product',(req,res,next) => {
     console.log("inside /products path");
