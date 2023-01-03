@@ -7,17 +7,17 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js",
     "start-guide": "node first-app.js",
-    "section-1":"node ./1-BasicResponse.js",
-    "section-2":"node ./2-BasicRequest.js",
-    "section-3":"node ./3-ModuleWorking/app.js",
-    "section-4":"node ./4-Assignment/Solution.js",
-    "section-5":"node ./5-WorkingwithExpress/5-1-app.js",
-    "section-5-2":"node ./5-WorkingwithExpress/5-2-app.js",
-    "section-6":"node ./6-Assignment/Solution.js",
-    "section-7":"node ./7-Express-POST/app.js",
-    "section-8":"node ./8-ExpressRouter/app.js",
-    "section-9":"node ./9-StylingNodeApp/app.js",
-    "section-10":"node ./10-Assignment/app.js"
+    "section-1": "node ./1-BasicResponse.js",
+    "section-2": "node ./2-BasicRequest.js",
+    "section-3": "node ./3-ModuleWorking/app.js",
+    "section-4": "node ./4-Assignment/Solution.js",
+    "section-5": "node ./5-WorkingwithExpress/5-1-app.js",
+    "section-5-2": "node ./5-WorkingwithExpress/5-2-app.js",
+    "section-6": "node ./6-Assignment/Solution.js",
+    "section-7": "node ./7-Express-POST/app.js",
+    "section-8": "node ./8-ExpressRouter/app.js",
+    "section-9": "node ./9-StylingNodeApp/app.js",
+    "section-10": "node ./10-Assignment/app.js"
   },
   "repository": {
     "type": "git",
@@ -34,6 +34,9 @@
   },
   "dependencies": {
     "body-parser": "^1.20.1",
-    "express": "^4.18.2"
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "pug": "^3.0.2"
   }
 }
