@@ -1,0 +1,3 @@
+In this section we used an array to output dynamic data but 
+we are using our server to store the information something which is not recommended
+this might cause sharing of same data between multiple users, something we donot want 

@@ -65,13 +65,17 @@ Libuv implements two extremely important features of node.js
 - Thread pool
 
 ### Event loop
- The event loop contains a single thread and is responsible for handling easy tasks like executing callbacks and network I/O. When the program is to initialize all the top-level code is executed, the code is not in the callback function. All the applications code that is inside callback functions will run in the event loop. EventLoop is the heart of node.js. When we start our node application the event loop starts running right away. Most of the work is done in the event loop.
+In Node.js, the event loop is a piece of the runtime that listens for events and dispatches callbacks to handle those events. It plays a central role in the non-blocking, event-driven I/O model that is the foundation of Node.js.
 
-Nodejs use event-driven-architecture.
+Here's how the event loop works:
 
-- Events are emitted.
-- Event loop picks them up.
-- Callbacks are called.
+- When a Node.js program starts, the event loop is created and starts running.
+- The event loop has a queue of events and callbacks that need to be handled. These events and callbacks are added to the queue by the Node.js runtime, external libraries, and the application code.
+- The event loop listens for events and, when one occurs, it adds the corresponding callback to the queue.
+- The event loop continually processes the event queue, executing each callback in turn.
+- When the queue is empty, the event loop waits for new events to be added, at which point it continues processing the queue.
+
+The event loop is what enables Node.js to be efficient and scalable. It allows the runtime to handle many concurrent events without using up too many resources, by only executing one callback at a time and waiting for I/O operations to complete asynchronously.
 
 ![Nodejs Architecture](./nodejsarchi.png)
 
@@ -86,4 +90,4 @@ Modules are of three types:
 
 ## Project still in development 
 
-###### Credits to __GeeksforGeeks.org__
+###### Credits to __GeeksforGeeks.org__ and ChatGPT
