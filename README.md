@@ -88,6 +88,30 @@ Modules are of three types:
 - Local Modules
 - Third-party Modules
 
+## The HTTP Module
+The http module is a built-in module in Node.js that provides functions for creating an HTTP server or client.
+
+To use the http module, you need to require it in your Node.js script:
+
+const http = require('http');
+
+With the http module, you can create an HTTP server that listens for requests and sends responses, or you can create an HTTP client that makes requests to other servers. 
+
+### Methods to recieve data in NodeJS
+In HTTP, the GET, POST, PUT, and DELETE methods are used to retrieve or modify data on a server. These methods are often used in conjunction with HTTP APIs and web applications.
+
+Here's a brief overview of each method:
+
+- GET: The GET method is used to retrieve data from the server. It is the most common HTTP method, and it is used when you enter a URL in your web browser or click on a link.
+
+- POST: The POST method is used to send data to the server, usually to create or update a resource. For example, when you submit a form on a website, the form data is usually sent to the server using the POST method.
+
+- PUT: The PUT method is used to update a resource on the server. It replaces the existing data with the data you send in the request.
+
+- DELETE: The DELETE method is used to delete a resource on the server.
+
+These methods can be used in Node.js by using the http module to create an HTTP server or client, or by using a third-party library like axios or request.
+
 ## Project still in development 
 
 ###### Credits to __GeeksforGeeks.org__ and ChatGPT
