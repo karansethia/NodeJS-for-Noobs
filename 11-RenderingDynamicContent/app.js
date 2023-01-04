@@ -6,9 +6,14 @@ const adminData = require('./routes/admin');
 const shopRoutes = require('./routes/shop');
 
 const app = express();
+
+//? app.set function is a part of the Express.js framework and is used to set a value for a key in the Express.js app. This value can be retrieved later using app.get.
+app.set('view engine', 'pug'); //* this code tell express that there is a template engine nvolved that must be used to render dynamic content
+app.set('views', path.join(__dirname, 'views')) //* this is the location of the templates
+
 app.use(bodyParser.urlencoded({extended: true})); 
 
-app.use(express.static(path.join(__dirname,'public'))) //! DO keep in mind that when you are mentioning the public folder here then there is no need to use public inside path to the files inside public(just act like you are already in public folder => used in shop.html )
+app.use(express.static(path.join(__dirname,'public'))) 
 app.use('/admin',adminData.routes) 
 app.use(shopRoutes)
 
