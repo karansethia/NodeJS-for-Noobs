@@ -8,7 +8,7 @@ const products = [];
 
 //! /admin/add-product => GET => from this the user is being redirected to add-product.html (or you can say user is trying to GET to a certain page by requesting)
 router.get('/add-product', (req, res, next) => {
-    res.sendFile(path.join(rootDir,'views','add-product.html'));
+    res.render('add-product')
   });
   
   //! /admin/add-product => POST => from this the user is submitting an input and being redirected to another page via shop.js
