@@ -112,6 +112,13 @@ Here's a brief overview of each method:
 
 These methods can be used in Node.js by using the http module to create an HTTP server or client, or by using a third-party library like axios or request.
 
+### Events in NodeJS
+In Node.js, an event is an action or occurrence that is detected by the program, typically triggered by user input, a network request, or the completion of a task. Events are an important part of many Node.js programs, and are used to trigger functions or methods in response to certain actions.
+
+Node.js includes a powerful event-driven architecture and a module called "events" that allows you to create, fire, and listen for events in your program.
+
+
+
 ## Project still in development 
 
 ###### Credits to __GeeksforGeeks.org__ and ChatGPT
