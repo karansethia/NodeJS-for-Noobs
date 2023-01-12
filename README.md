@@ -97,6 +97,23 @@ const http = require('http');
 
 With the http module, you can create an HTTP server that listens for requests and sends responses, or you can create an HTTP client that makes requests to other servers. 
 
+## The Path module
+The path module in Node.js provides a way to work with file and directory paths. It can be used to parse, normalize, and join file paths, as well as to determine the relative location of one file to another. Some common methods of the path module include:
+ - basename(), which returns the last portion of a file path, 
+ - dirname(), which returns the directory portion of a file path, and 
+ - join(), which joins multiple parts of a file path together. 
+ Additionally, the path module provides methods for working with file extensions, such as extname(), which returns the file extension of a file path, and parse(), which returns an object with properties representing the different parts of a file path.
+
+## The OS Module
+The os module in Node.js provides a way to interact with the underlying operating system. It provides a number of useful methods for retrieving information about the system, such as:
+
+- os.arch() returns a string identifying the operating system architecture for which the Node.js binary was compiled (e.g. 'x64' for a 64-bit system).
+- os.cpus() returns an array of objects containing information about each logical CPU core.
+- os.endianness() returns a string identifying the endianness of the CPU ('BE' for big-endian or 'LE' for little-endian).
+- os.freemem() returns the amount of free system memory in bytes.
+- os.homedir() returns the home directory of the current user.
+- os.hostname() returns the hostname of the operating system.
+
 ### Methods to recieve data in NodeJS
 In HTTP, the GET, POST, PUT, and DELETE methods are used to retrieve or modify data on a server. These methods are often used in conjunction with HTTP APIs and web applications.
 
