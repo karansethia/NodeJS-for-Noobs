@@ -134,6 +134,43 @@ In Node.js, an event is an action or occurrence that is detected by the program,
 
 Node.js includes a powerful event-driven architecture and a module called "events" that allows you to create, fire, and listen for events in your program.
 
+### NPM
+npm (short for Node Package Manager) is a package manager for the JavaScript programming language. It is the default package manager for the JavaScript runtime environment Node.js. npm makes it easy for developers to share and reuse code, and to manage the dependencies of their projects.
+
+With npm, developers can easily install and manage packages (collections of code written by other developers) that can be used in their own projects. These packages can include anything from utility libraries and frameworks to tools for testing and building. npm also makes it easy for developers to specify and manage the versions of the packages their projects depend on, which helps to ensure that their projects continue to work as expected even as the packages they depend on are updated.
+
+npm is typically installed automatically when Node.js is installed, and it can be used from the command line to install, update, and manage packages. It also include a command line tool to easily create and manage Node.js projects, and a website that allows developers to search for and download packages.
+
+Overall, npm is a powerful tool that makes it easy for developers to manage their dependencies and reuse code, which can help to save time and improve the quality of their projects. To install a package using npm just use the below snippet
+
+``` npm <package-name> ```
+#### Using Package as a Production and Development dependency
+In npm, the --save-dev and --save options are used when installing packages to specify the type of dependency that the package has on the project.
+
+- --save is used to add a package as a production dependency. This means that the package is needed for the project to run in a production environment. For example, if a package is required for the application to function, it should be added using --save.
+
+- --save-dev is used to add a package as a development dependency. This means that the package is needed for development and testing purposes, but it is not required for the project to run in a production environment. For example, if a package is used for testing or building, it should be added using --save-dev.
+
+In general, --save is used for packages that are needed to run the application, while --save-dev is used for packages that are needed for development and testing, but not for running the application.
+
+When installing a package, you can also use -D as a short form for --save-dev and -S as a short form for --save in the command.
+
+For example:
+
+```npm install <package-name> --save ```
+or
+
+```npm install <package-name> -S```
+
+and
+
+```npm install <package-name> --save-dev ```
+or
+
+```npm install <package-name> -D```
+
+These options will specify the package as a production dependency or a development dependency in package.json file, which is used to manage the dependencies of a Node.js project.
+
 
 
 ## Project still in development 
