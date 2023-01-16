@@ -47,7 +47,7 @@ Node.js basically works on two concept
 - Asynchronous
 - Non-blocking I/O
 
-## Non-blocking I/o
+## Non-blocking I/O
 
  Non-blocking i/o  means working with multiple requests without blocking the thread for a single request. I/O basically interacts with external systems such as files, databases. Node.js is not used for CPU-intensive work means for calculations, video processing because a single thread cannot handle the CPU works.
 
@@ -134,7 +134,7 @@ In Node.js, an event is an action or occurrence that is detected by the program,
 
 Node.js includes a powerful event-driven architecture and a module called "events" that allows you to create, fire, and listen for events in your program.
 
-### NPM
+## NPM
 npm (short for Node Package Manager) is a package manager for the JavaScript programming language. It is the default package manager for the JavaScript runtime environment Node.js. npm makes it easy for developers to share and reuse code, and to manage the dependencies of their projects.
 
 With npm, developers can easily install and manage packages (collections of code written by other developers) that can be used in their own projects. These packages can include anything from utility libraries and frameworks to tools for testing and building. npm also makes it easy for developers to specify and manage the versions of the packages their projects depend on, which helps to ensure that their projects continue to work as expected even as the packages they depend on are updated.
