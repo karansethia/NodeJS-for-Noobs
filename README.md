@@ -171,7 +171,27 @@ or
 
 These options will specify the package as a production dependency or a development dependency in package.json file, which is used to manage the dependencies of a Node.js project.
 
+## Express Framework
+Express.js is a web application framework for Node.js. It provides a simple and flexible way to create web applications and APIs using JavaScript. It is built on top of the Node.js HTTP module, and it allows developers to easily handle HTTP requests and responses, define routes, and perform other common web development tasks. Express.js is widely used in the Node.js ecosystem and is often used in conjunction with other popular JavaScript libraries and frameworks such as React and Angular.
 
+### Advantages of Express Framework
+Express.js provides several functionalities to help simplify the development of web applications and APIs:
+
+Routing: Express.js allows developers to define and handle different routes for different HTTP methods (e.g. GET, POST, PUT, DELETE) and URIs.
+
+Middleware: Express.js provides a way to handle middleware functions, which can be used for tasks such as authentication, error handling, and data parsing.
+
+Templating: Express.js can be used in conjunction with template engines like Jade, EJS, and Handlebars to dynamically generate HTML pages.
+
+Handling Requests and Responses: Express.js makes it easy to handle incoming requests, extract data from them, and send appropriate responses.
+
+Serving static files: Express.js can serve static files like images, CSS, and JavaScript, which can be used to build client-side functionality.
+
+Database Integration: Express.js can be integrated with various databases like MongoDB, MySQL, PostgreSQL and so on.
+
+Error Handling: Express.js includes a built-in error handling middleware that makes it easy to handle errors that occur in route handlers and middleware.
+
+These functionalities along with many other features makes Express.js a powerful and widely used framework for building web applications and APIs.
 
 ## Project still in development 
 
