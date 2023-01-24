@@ -193,6 +193,39 @@ Error Handling: Express.js includes a built-in error handling middleware that ma
 
 These functionalities along with many other features makes Express.js a powerful and widely used framework for building web applications and APIs.
 
+## Templating Engines
+A template engine is a tool or software library that allows developers to define templates for generating dynamic HTML, XML, or other markup languages. These templates usually contain placeholders that are replaced with actual data when the template is rendered.
+
+Template engines are often used in web development to separate the presentation logic (HTML, CSS, etc.) from the business logic (JavaScript, server-side code, etc.) in order to make the code more maintainable and reusable.
+
+Template engines are typically used in conjunction with web frameworks like Express.js, Ruby on Rails, and Django, and they allow developers to create views that can be easily rendered with different data.
+
+There are many template engines available, each with its own syntax and features. Some popular template engines for Node.js include Pug, EJS, and Handlebars, and for other languages, like Python, Jinja2, Django Templates.
+
+### PUG, Express Handlebars and EJS
+Pug, Express Handlebars, and EJS are all template engines that can be used with Express.js to dynamically generate HTML pages.
+#### PUG
+Pug is a high-performance template engine for Node.js. It uses a clean and simple syntax, and it compiles the templates to JavaScript functions. One of the advantages of Pug is that it is easy to read and understand, making it a good choice for beginners. 
+Advantages of Pug:
+
+Clean and simple syntax
+High performance
+Good for beginners
+#### Express Handlebars
+Express Handlebars is a template engine that is based on the Handlebars template engine. It is designed to work with Express.js and it allows developers to use the Handlebars syntax to create templates. One of the advantages of Express Handlebars is that it is easy to integrate with existing Handlebars projects.
+Advantages of Express Handlebars:
+
+Familiar Handlebars syntax
+Easy to integrate with existing Handlebars projects
+
+#### EJS
+EJS is a simple and lightweight template engine for Node.js. It uses a familiar syntax that is similar to that of JavaScript, which makes it easy to learn for developers who are familiar with the language. One of the advantages of EJS is that it is easy to use and does not require any additional configuration.
+Advantages of EJS:
+
+Simple and lightweight
+Familiar JavaScript-like syntax
+No additional configuration required
+
 ## Project still in development 
 
 ###### Credits to __GeeksforGeeks.org__ and ChatGPT
