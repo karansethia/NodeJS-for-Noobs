@@ -226,6 +226,24 @@ Simple and lightweight
 Familiar JavaScript-like syntax
 No additional configuration required
 
+## MVC in NodeJS
+MVC (Model-View-Controller) is a design pattern that separates an application into three main components: the model, the view, and the controller.
+
+#### Model:
+It represents the data structure and the business logic of the application. It is responsible for retrieving and storing data, and it also contains the logic for processing and manipulating data.
+
+#### View: 
+It represents the user interface of the application. It is responsible for rendering the data provided by the model and presenting it to the user.
+
+#### Controller: 
+It acts as an intermediary between the model and the view. It receives user input, updates the model accordingly, and selects the appropriate view to render.
+
+In a Node.js application, MVC can be implemented using various frameworks, such as Express, Meteor, and Sails. The implementation may differ slightly between frameworks, but the basic idea is to separate the application into these three components and to manage the flow of data between them.
+
+For example, in an Express-based Node.js application, the controller component can be implemented using middleware functions that handle incoming HTTP requests and perform the necessary actions on the model. The view component can be implemented using template engines, such as Pug or EJS, that render HTML pages based on the data provided by the model. The model component can be implemented using a database or a data store such as MongoDB or MySQL.
+
+In summary, the MVC pattern is used in Node.js to promote separation of concerns, maintain modularity, and improve the overall structure and organization of an application.
+
 ## Project still in development 
 
 ###### Credits to __GeeksforGeeks.org__ and ChatGPT
