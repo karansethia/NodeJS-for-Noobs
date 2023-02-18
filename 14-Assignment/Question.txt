@@ -1,0 +1,7 @@
+Task #1
+Create a npm project and install Express
+
+Task #2
+Add 2 routes
+=> '/' holds a form that allows user to input their name
+=> '/users' outputs an unordered list with users' names

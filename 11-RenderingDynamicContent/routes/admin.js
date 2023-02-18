@@ -15,7 +15,7 @@ router.get('/add-product', (req, res, next) => {
   router.post('/add-product', (req, res, next) => {
     //console.log(req.body);
     products.push({title: req.body.title}); //pushing the data recieved to the array
-    res.redirect('/');  // this path can be found in shop.js
+    res.redirect('/');  // this path can be found in shop.js / it is the default path
   });
 
 //? seperating export statements for data and routes
