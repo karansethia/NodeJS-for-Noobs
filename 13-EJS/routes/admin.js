@@ -7,10 +7,15 @@ const rootDir = require('../util/path');
 const products = [];
 
 
-router.get('/add-product', (req, res, next) => {
-    res.render('add-product',{pageTitle: 'Add-Product', 
-    path: '/admin/add-product'})  //! path in this object can be anything
-  });
+router.get('/add-product', (req, res, next) => {  
+  res.render('add-product',
+  {pageTitle: 'Add-Product', 
+  path: '/admin/add-product', //! path in this object can be anything
+  formsCSS: true,
+  activeAddProduct: true
+  })  
+});
+  
   
   //! /admin/add-product => POST => from this the user is submitting an input and being redirected to another page via shop.js
   router.post('/add-product', (req, res, next) => {
