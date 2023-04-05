@@ -19,7 +19,10 @@
     "section-9": "node ./9-StylingNodeApp/app.js",
     "section-10": "node ./10-Assignment/app.js",
     "section-11": "node ./11-RenderingDynamicContent/app.js",
-    "section-12": "node ./12-ExpressHandlebars/app.js"
+    "section-12": "node ./12-ExpressHandlebars/app.js",
+    "section-13": "node ./13-EJS.app.js",
+    "section-14": "node ./14-Assignment/app.js",
+    "section-15": "node ./15-MVC/app.js"
   },
   "repository": {
     "type": "git",

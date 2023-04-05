@@ -1,18 +1,31 @@
-exports.getAddProduct = (req, res, next) => {  
+const Product = require('../models/product')
+
+exports.getAddProductPage = (req, res, next) => {  
     res.render('add-product',
-    {pageTitle: 'Add-Product', 
-    path: '/admin/add-product',
-    formsCSS: true,
-    productsCSS: true, 
-    activeAddProduct: true
+    {
+      pageTitle: 'Add-Product', 
+      path: '/admin/add-product',
+      formsCSS: true,
+      productsCSS: true, 
+      activeAddProduct: true
   })  
 }
 
-const products = [];
 
 exports.postAddProduct = (req, res, next) => {
-    console.log(req.body);
-    products.push({title: req.body.title}); //pushing the data recieved to the array
+    // products.push({title: req.body.title});
+    const product = new Product(req.body.title) //* Creating new object for a product
+    product.save()
     res.redirect('/');  // this path can be found in shop.js
-    console.log(products);
   }
+
+exports.addProducts = (req, res, next) => {
+  const Products = Product.fetchAll();
+  res.render('shop', {
+  Products: products,
+  pageTitle: 'Shop/Home', 
+  path: '/',
+  activeShop: true,
+  productsCSS: true
+  });
+}
