@@ -119,7 +119,15 @@ In HTTP, the GET, POST, PUT, and DELETE methods are used to retrieve or modify d
 
 Here's a brief overview of each method:
 
-- GET: The GET method is used to retrieve data from the server. It is the most common HTTP method, and it is used when you enter a URL in your web browser or click on a link.
+- GET: The GET method is used to retrieve data from the server. It is the most common HTTP method, and it is used when you enter a URL in your web browser or click on a link. Use get method while serving html/template pages that have little or no connection to sensitive data in the database
+ - GET requests can be cached
+ - GET requests remain in the browser history
+ - GET requests can be bookmarked
+ - GET requests should never be used when dealing with sensitive data
+ - GET requests have length restrictions
+ - GET requests are only used to request data (not modify)
+
+ 
 
 - POST: The POST method is used to send data to the server, usually to create or update a resource. For example, when you submit a form on a website, the form data is usually sent to the server using the POST method.
 
