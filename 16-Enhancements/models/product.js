@@ -1,17 +1,37 @@
-//? this is information about what a single product should look like and what kind of data should it represent
+const fs = require('fs');
+const path = require('path');
 
-products = [];
+const p = path.join(
+  path.dirname(process.mainModule.filename),
+  'data',
+  'products.json'
+);
 
-module.exports = class Product  {
-    constructor(title){
-        this.title = title;
+const getProductsFromFile = cb => {
+  fs.readFile(p, (err, fileContent) => {
+    if (err) {
+      cb([]);
+    } else {
+      cb(JSON.parse(fileContent));
     }
+  });
+};
 
-    save(){
-        products.push(this);    //* Adds the title from the newly created object into the array
-    }
+module.exports = class Product {
+  constructor(t) {
+    this.title = t;
+  }
 
-    static fetchAll(){      //* Static method to call whwnever we want to fetch all products directly from the class without instantiating an object
-        return products;
-    }
-}
+  save() {
+    getProductsFromFile(products => {
+      products.push(this);
+      fs.writeFile(p, JSON.stringify(products), err => {
+        console.log(err);
+      });
+    });
+  }
+
+  static fetchAll(cb) {
+    getProductsFromFile(cb);
+  }
+};
