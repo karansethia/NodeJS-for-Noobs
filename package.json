@@ -22,14 +22,15 @@
     "section-12": "node ./12-ExpressHandlebars/app.js",
     "section-13": "node ./13-EJS.app.js",
     "section-14": "node ./14-Assignment/app.js",
-    "section-15": "node ./15-MVC/app.js"
+    "section-15": "node ./15-MVC/app.js",
+    "section-16": "node ./16-Enhancements/app.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/karansethia/NodeJS-for-Noobs.git"
   },
   "author": "Karan Sethia",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/karansethia/NodeJS-for-Noobs/issues"
   },
