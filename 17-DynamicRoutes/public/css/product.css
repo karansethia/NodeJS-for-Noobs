@@ -25,3 +25,13 @@
 .product__description {
     text-align: center;
 }
+
+.card__image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card__image img{
+    height: 180px;
+    width: fit-content;
+}
