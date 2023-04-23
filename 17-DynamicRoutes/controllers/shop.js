@@ -14,7 +14,9 @@ exports.getSingleProduct = (req, res, next) => {
 
   //? Getting params from the link
   const productId = req.params.productId;
-  console.log(productId);
+  Product.findById(productId, product => {
+    console.log(product);
+  });
   res.redirect('/');
 
 }
