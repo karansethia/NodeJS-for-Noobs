@@ -19,6 +19,15 @@ form {
   display: inline;
 }
 
+.centered{
+  text-align: center;
+}
+
+.centered img{
+  width: 120px;
+  height: fit-content;
+}
+
 .main-header {
   width: 100%;
   height: 3.5rem;

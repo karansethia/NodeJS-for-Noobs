@@ -16,7 +16,10 @@ router.get('/products', shopController.getProducts);
 //* We tell express that there will be a variable inside the link by addiing a colon followed by any variable name
 router.get('/products/:productId',shopController.getSingleProduct)  
 
-router.get('/cart', shopController.getCart);
+
+router.get('/cart', shopController.getCart); //* For displaying the cart
+
+router.post('/cart', shopController.postCart); //* For adding products to the cart
 
 router.get('/orders', shopController.getOrders);
 
