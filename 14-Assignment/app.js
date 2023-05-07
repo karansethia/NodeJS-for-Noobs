@@ -8,7 +8,7 @@ const users = require('./routes/users')
 
 const app = express();
 
-app.set('view engine','pug');
+app.set('view engine','ejs');
 app.set('views',path.join(__dirname,'views'))
 
 app.use(bodyParser.urlencoded({extended:true}))
@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({extended:true}))
 app.use(express.static(path.join(__dirname,'public')))
 
 app.use(users);
-app.use('/admin',home.routes)
+app.use(home)
 
 app.use((req,res,next) => {
     res.render('404', {pageTitle: 'Page not found'})

@@ -1,9 +1,16 @@
 const express = require('express');
 
+import { users } from './home';
+
 const router = express.Router();
 
-router.post('/',(req,res,next) => {
-    res.render();
+router.get('/users',(req,res,next) => {
+    console.log(users);
+    res.render('users',{
+        pageTitle : 'Users List',
+        // userList : usersData.users
+    })
 })
 
-export default router;
+
+module.exports = router;
