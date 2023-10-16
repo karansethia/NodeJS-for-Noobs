@@ -42,7 +42,7 @@ const server = http.createServer((req,res) => {
             //fs.writeFileSync('message.txt',recievedMessage); => this will block the code till the message.txt fill is written
             fs.writeFile('message.txt', recievedMessage, err => {
                 // this callback will execute once the recieved message is written and we can handle errors in here as well
-                console.log(err);
+                err ? console.log(err) : console.log('no error occured');
                 // res.writeHead(302,{this object should contain all the headrs you want to include});   //? writeHead allows us to write meta info in one go with 302 => this number means redirection
                 //? Another way of writing meta data
                 res.statusCode = 302;

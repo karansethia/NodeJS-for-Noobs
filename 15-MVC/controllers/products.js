@@ -22,7 +22,7 @@ exports.postAddProduct = (req, res, next) => {
 exports.addProducts = (req, res, next) => {
   const Products = Product.fetchAll();
   res.render('shop', {
-  Products: products,
+  Products: Products,
   pageTitle: 'Shop/Home', 
   path: '/',
   activeShop: true,
